@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <title>Template Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar HTML -->
+    <nav class="navigation-bar">
+        <div class="logo">
+            <img src="img/Sleeknotecom.jpg" width="40px">
+        </div>
+
+        <div class="steps">
+            <div class="step" data-step="1" data-title="General" data-description="Give your template a name and specify for what will you use your template.">
+                <span class="step-number">STEP 1</span>
+                <span class="step-title">General</span>
+                <div class="step-toggle">
+                    <input type="checkbox" checked />
+                </div>
+            </div>
+
+            <div class="step" data-step="2" data-title="Design" data-description="Customize the design and layout of your template.">
+                <span class="step-number">STEP 2</span>
+                <span class="step-title">Design</span>
+                <div class="step-toggle">
+                    <input type="checkbox" />
+                </div>
+            </div>
+
+            <div class="step" data-step="3" data-title="Display settings" data-description="Adjust where and how your template will be displayed.">
+                <span class="step-number">STEP 3</span>
+                <span class="step-title">Display settings</span>
+                <div class="step-toggle">
+                    <input type="checkbox" />
+                </div>
+            </div>
+
+            <div class="step" data-step="4" data-title="Integrations" data-description="Integrate with third-party applications.">
+                <span class="step-number">STEP 4</span>
+                <span class="step-title">Integrations</span>
+                <div class="step-toggle">
+                    <input type="checkbox" />
+                </div>
+            </div>
+
+            <div class="step" data-step="5" data-title="Final setup" data-description="Complete the setup and review your configuration.">
+                <span class="step-number">STEP 5</span>
+                <span class="step-title">Final setup</span>
+                <div class="step-toggle">
+                    <input type="checkbox" />
+                </div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button class="share-preview">
+                Share preview
+            </button>
+
+            <button class="settings">
+                ⚙️
+            </button>
+        </div>
+    </nav>
+
+    <!-- Content Display Area -->
+    <div class="content-display" id="contentDisplay">
+        <h1>STEP 1</h1>
+        <h2>General</h2>
+        <p>Give your template a name and specify for what will you use your template.</p>
+    </div>
+
+    <!-- General Step Specific Element -->
+    <div class="general-step-frame" id="generalStepFrame">
+        <div class="general-step-group">
+            <p class="general-step-title">Name your template</p>
+            <p class="general-step-description">Give your template a name.</p>
+            <input type="text" class="general-step-input" placeholder="Template 1">
+        </div>
+
+        <div class="general-step-group">
+            <p class="general-step-title">Name your template</p>
+            <p class="general-step-description">Give your template a name.</p>
+            <input type="text" class="general-step-input" placeholder="Seasonal sales">
+        </div>
+    </div>
+
+    <!-- Step 2 Specific Content -->
+<div class="step-two-frame" id="stepTwoFrame">
+    <div class="main-frame">
+        <!-- Main Content Displayed Here -->
+        <div class="content-area" id="contentArea">
+            <p>Select an option from the sidebar to begin...</p>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebar-option" data-content="edit">Edit</div>
+        <div class="sidebar-option" data-content="layout">Layout</div>
+        <div class="sidebar-option" data-content="add-elements">Add Elements</div>
+    </div>
+</div>
+
+<!-- Step 3 Specific Content -->
+<div class="step-three-frame" id="stepThreeFrame">
+    <div class="main-frame3">
+        <!-- Main Content Displayed Here -->
+        <div class="settings-wrapper">
+            <div class="setting-item">
+                <label class="toggle-switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+                <div class="setting-content">
+                    <h3 class="setting-title">Trigger Settings</h3>
+                    <p class="setting-description">Manage how and when the display triggers.</p>
+                </div>
+            </div>
+
+            <div class="setting-item">
+                <label class="toggle-switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+                <div class="setting-content">
+                    <h3 class="setting-title">Frequency Settings</h3>
+                    <p class="setting-description">Set how often this display will appear to users.</p>
+                </div>
+            </div>
+
+            <div class="setting-item">
+                <label class="toggle-switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+                <div class="setting-content">
+                    <h3 class="setting-title">Display Conditions</h3>
+                    <p class="setting-description">Configure conditions under which the display will be visible.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+  <!-- Step 4: Integrations -->
+    <div class="step-four-frame" id="stepFourFrame">
+        <div class="integration-grid">
+            <div class="integration-item" data-integration="google">
+                <div class="integration-icon">🔗</div>
+                <div class="integration-title">Google</div>
+            </div>
+            <div class="integration-item" data-integration="zapier">
+                <div class="integration-icon">⚡</div>
+                <div class="integration-title">Zapier</div>
+            </div>
+            <div class="integration-item" data-integration="mailchimp">
+                <div class="integration-icon">📧</div>
+                <div class="integration-title">Mailchimp</div>
+            </div>
+            <div class="integration-item" data-integration="hubspot">
+                <div class="integration-icon">📊</div>
+                <div class="integration-title">HubSpot</div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Step 5: Final Setup -->
+    <div class="step-five-frame" id="stepFiveFrame">
+        <div class="final-step-container">
+            <h2 class="final-step-title">Do you want to apply changes to all the campaigns?</h2>
+            <p class="final-step-description">
+                You have 3 campaigns made with this template. Would you like to apply the changes to all of them?
+            </p>
+            <div class="final-step-actions">
+                <button class="final-step-button yes-button">Yes, apply to all</button>
+                <button class="final-step-button no-button">No, only this one</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Footer -->
+    <div class="sticky-footer">
+        <button class="continue-button" id="continueButton">Continue</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
